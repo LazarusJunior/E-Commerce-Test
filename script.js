@@ -28,7 +28,7 @@ const productsSection = document.getElementById("productsSection")
 const adminControls = document.getElementById("adminControls")
 const messageContainer = document.getElementById("messageContainer")
 
-// Event Listeners
+
 document.getElementById("cartBtn").addEventListener("click", () => {
     cartModal.style.display = "block"
     updateCart()
@@ -88,7 +88,7 @@ async function loadProducts() {
         const response = await fetch(`${API_URL}/products`)
         const products = await response.json()
 
-        // Update products grid
+        
         document.getElementById("productsContainer").innerHTML = products
             .map(
                 (product) => `
@@ -105,7 +105,7 @@ async function loadProducts() {
             )
             .join("")
 
-        // Update admin table if user is admin
+        
         if (currentUser?.role === "admin") {
             document.querySelector("#adminProductsTable tbody").innerHTML = products
                 .map(

@@ -35,6 +35,12 @@
       "email": "lk2j@gmail.com",
       "password": "lkj123",
       "role": "user"
+    },
+    {
+      "id": "1737640074047",
+      "name": "LKJ",
+      "email": "lkj3@gmail.com",
+      "password": "lkj123"
     }
   ],
   "products": [

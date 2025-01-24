@@ -83,3 +83,4 @@ describe("handleRegister", () => {
     ).toContain("Registration failed. Please try again later.");
   });
 });
+ 
